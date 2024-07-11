@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Product } from './Product';
 import { ProductCartService } from '../product-cart.service';
+import { ProductDataService } from '../product-data.service';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
@@ -8,7 +9,7 @@ import { ProductCartService } from '../product-cart.service';
 })
 export class ProductListComponent {
 
-  constructor (private productCartService: ProductCartService){
+  constructor (private productCartService: ProductCartService, private productDataService:ProductDataService){
 
   }
   products: Product[] = [{
