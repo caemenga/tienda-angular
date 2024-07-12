@@ -9,6 +9,7 @@ La aplicacion esta conectada a una API gratutita, que es Fake Store. Mediante el
 Nombre: Gaetano Mengarelli
 DNI: 39550937
 mail: caemenga@gmail.com
+Sede: Tandil
 
 ## Api Rest
 
