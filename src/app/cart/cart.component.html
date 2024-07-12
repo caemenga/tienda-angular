@@ -1,4 +1,4 @@
-<h3>Carrito de compras</h3>
+<h3 class="text-bg-dark p-3 mb-2 bg-gradient">Carrito de compras</h3>
 <ul>
     @for (product of (cartList$ | async) ; track product.id) {
         <li><app-item-cart-list [product]="product"></app-item-cart-list></li>

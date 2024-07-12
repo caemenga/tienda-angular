@@ -23,6 +23,12 @@ export class ProductCartService {
     console.log(this._cartList);
     this.cartList.next(this._cartList);
   }
+
+
+  delete(id:number){
+    this._cartList = this._cartList.filter(product => product.id !== id);
+    this.cartList.next(this._cartList);
+  }
 }
 
 

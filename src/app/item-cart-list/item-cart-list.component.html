@@ -7,5 +7,5 @@
       <small>{{product.price | currency}}</small>
     </div>
     <p class="mb-1">{{product.category}}</p>
-    <small><button class="btn btn-primary">Borrar del carrito</button></small>
+    <small><button class="btn btn-outline-danger" (click)="deleteItem(product.id)">Borrar del carrito</button></small>
 </div>

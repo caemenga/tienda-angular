@@ -1,5 +1,5 @@
 <div class="productList">
-  <button class="btnProductList" (click)="prev()">atras</button>
+  <button class="btn btn-warning" (click)="prev()">back</button>
   <div class="carrousel-container">
 <ul>
   @for (product of visibleProducts; track product.id) {
@@ -9,6 +9,6 @@
   }
 </ul>
 </div>
-<button class="btnProductList" (click)="next()">adelante</button>
+<button class="btn btn-warning" (click)="next()">next</button>
 </div>
 
