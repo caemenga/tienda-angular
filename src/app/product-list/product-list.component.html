@@ -1,5 +1,8 @@
+<div class="productList">
+  <button class="btnProductList" (click)="prev()">atras</button>
+  <div class="carrousel-container">
 <ul>
-  @for (product of products; track product.id) {
+  @for (product of visibleProducts; track product.id) {
     <li>
       <div class="card" style="width: 10rem; height: fit-content;">
         <img [src]="product.image" class="card-img-top" [alt]="product.title" width="100">
@@ -12,4 +15,7 @@
     </li>
   }
 </ul>
+</div>
+<button class="btnProductList" (click)="next()">adelante</button>
+</div>
 
