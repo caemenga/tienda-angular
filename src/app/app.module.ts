@@ -8,6 +8,8 @@ import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { CardComponent } from './card/card.component';
+import { ItemCartListComponent } from './item-cart-list/item-cart-list.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http'
     CartComponent,
     HomeComponent,
     ContactComponent,
+    CardComponent,
+    ItemCartListComponent,
   ],
   imports: [
     BrowserModule,

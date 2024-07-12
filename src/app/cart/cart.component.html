@@ -1,17 +1,9 @@
 <h3>Carrito de compras</h3>
 <ul>
     @for (product of (cartList$ | async) ; track product.id) {
-        <div class="list-group">
-    
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">{{product.title}}</h5>
-              <small>{{product.price | currency}}</small>
-            </div>
-            <p class="mb-1">{{product.category}}</p>
-            <small><button class="btn btn-primary">Borrar del carrito</button></small>
-      </div>
+        <li><app-item-cart-list [product]="product"></app-item-cart-list></li>
     }@empty {
-        <li>No tienes productos en el carrito</li>
+        <li class="empty">No tienes productos en el carrito</li>
     }
 </ul>
 

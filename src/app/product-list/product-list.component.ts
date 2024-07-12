@@ -18,6 +18,7 @@ export class ProductListComponent implements OnInit{
   ngOnInit(): void {
     this.productDataService.getAll().subscribe(products => this.products = products);
     this.updateVisibleProducts();
+    console.log("activo ngOnInit en productListComponent")
   }
 
   public updateVisibleProducts(){
@@ -39,7 +40,5 @@ export class ProductListComponent implements OnInit{
   }
   
 
-  addToCart(product: Product){
-    this.productCartService.addToCart(product);
-  }
+  
 }

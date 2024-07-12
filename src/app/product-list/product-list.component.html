@@ -4,14 +4,7 @@
 <ul>
   @for (product of visibleProducts; track product.id) {
     <li>
-      <div class="card" style="width: 10rem; height: fit-content;">
-        <img [src]="product.image" class="card-img-top" [alt]="product.title" width="100">
-        <div class="card-body">
-          <h5 class="card-title">{{product.title}}</h5>
-          <p class="card-text">{{product.description}}</p>
-          <button class="btn btn-primary" (click)="addToCart(product)"> agregar al carrito</button>
-        </div>
-      </div>
+      <app-card [product]="product"></app-card>
     </li>
   }
 </ul>
